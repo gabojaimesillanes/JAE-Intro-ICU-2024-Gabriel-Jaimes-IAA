@@ -27,7 +27,7 @@ def download_fits_files(folder_url, save_directory):
             f.write(requests.get(file_url).content)
         print("Downloaded.")
         
-# Función para plotear PCA
+
 def plot_pca(X, n_components):
     pca = PCA(n_components=n_components)
     pca.fit(X)
